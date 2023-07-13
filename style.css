@@ -1,0 +1,83 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    background:blueviolet;
+    color: white;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box
+{
+    background: #fff;
+    color: #000;
+    height: 550px;
+    width: 500px;
+    border-radius: 3%;
+    text-align: center;
+    padding: 15px 0px;  
+    transition: 500ms;
+}
+.box:hover{
+    box-shadow: 30px 20px 50px rgb(38, 38, 38);
+}
+h1{
+    border: 2px dashed blueviolet;
+    width:220px;
+    border-radius: 40%;
+    text-align: center;
+    margin: 0px auto;
+    box-shadow: 0px 5px 5px blueviolet;
+}
+#item{
+    text-align: left;
+    padding: 10px;
+    margin-top: 30px;
+    width: 95%;
+    color: blueviolet;
+    border:1px solid blueviolet;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 700;
+}
+#item:focus{
+    outline: none;
+}
+#to-do-box{
+    text-align: left;
+    margin: 10px auto;
+    list-style: none;
+    width: 95%;
+}
+#to-do-box li{
+    background: rgb(203, 148, 255);
+    color: white;
+    padding: 10px;
+    border-radius:5px;
+    font-size: 16px;
+    font-weight: 700;
+    position: relative;
+    margin-top: 10px;
+    user-select: none;
+}
+span{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: absolute;
+    top:10px;
+    right:10px;
+    cursor: pointer;
+    color: red;
+    border: 1px solid red;
+    padding: 0px 3px;
+    border-radius: 5px;
+}
+.done{
+    text-decoration: line-through;
+    color: rgb(216, 60, 60);
+    background-color: rgb(173, 140, 203) !important;
+}
